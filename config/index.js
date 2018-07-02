@@ -11,12 +11,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {  
-        target: 'http://yjh.li-shang-bin.com/iweb',// 请换成你的地址  
-        changeOrigin: true,  
-        pathRewrite: {  
-          '^/api': ''  
-        }  
+      '/api': {  //使用"/api"来代替"http://120.76.205.241:8000" 
+        target: 'http://localhost:8080', //源地址 
+        pathRewrite: { 
+          '^/api': '/static/mock' //路径重写 
+          } 
       } 
     },
 
