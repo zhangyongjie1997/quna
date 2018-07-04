@@ -1,9 +1,9 @@
 <template>
-  <div @click="close" class="main">
+  <div @click.self="close" class="main">
     <div class="img">
       <swiper :options="swiperOption" v-if="phos.length">
         <swiper-slide v-for="item of phos" :key="item.id">
-          <img @click.stop="{}" :src="item" alt="">
+          <img :src="item" alt="">
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
