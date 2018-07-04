@@ -21,7 +21,7 @@ export default {
       someCities:[],
       ifSearch:false,
       timer:null,
-      letter:''
+      letter:'',
     }
   },
   mounted(){

@@ -27,7 +27,7 @@ export default {
       swipers:[],
       iconList:[],
       recommeds:[],
-      loading:true
+      loading:true,
     }
   },
   mounted(){

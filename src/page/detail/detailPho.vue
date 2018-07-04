@@ -15,13 +15,17 @@
   export default {
     props: {
       phos: Array,
-      swiperOption: {
-        pagination: {
-          el: '.swiper-pagination',
+    },
+    data() {
+      return {
+        swiperOption: {
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          swiperWrapperSize: true,
+          reverseDirection: true,
         },
-        swiperWrapperSize: true,
-        reverseDirection: true,
-      },
+      }
     },
     methods: {
       close() {
