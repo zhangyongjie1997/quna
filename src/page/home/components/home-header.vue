@@ -33,12 +33,14 @@ export default {
 
 <style scoped lang='less'>
 .main{
+  box-sizing: border-box;
+  padding: 2px 0;
   display: flex;
   clear: both;
   position: fixed;
   top: 0;
   min-width: 100%;
-  height: 40px;
+  height: 45px;
   background: #ccc;
   z-index: 10;
   .city{
@@ -82,7 +84,7 @@ export default {
       border: none;
       width: 80%;
       padding-right: 13px;
-      // outline: none;
+      outline: none;
     }
   }
 }

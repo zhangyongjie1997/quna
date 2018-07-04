@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .wrap{
   width: 100%;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 img{
   width: 100%;
