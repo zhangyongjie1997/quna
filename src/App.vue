@@ -5,12 +5,16 @@
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App'
+  }
+
 </script>
 
 <style>
-@import url('./css/reset.css');
-.pointer{cursor: pointer;}
+  @import url('./css/reset.css');
+  .pointer {
+    cursor: pointer;
+  }
+
 </style>

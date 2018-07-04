@@ -4,11 +4,11 @@
     <div class="main" ref="wrapper">
       <ul>
         <li v-for="(recommed, index) in recommeds" :key="index" class="item">
-          <img :src="recommed.imgUrl" alt="">
+          <img v-lazy="recommed.imgUrl" alt="">
           <div class="itemInfo">
             <span>{{recommed.title}}</span>
             <p>{{recommed.desc}}</p>
-            <div class="btn">查看详情</div>
+            <router-link tag="div" :to="{name:'detail',params:{id:recommed.id}}" class="btn">查看详情</router-link>
           </div>
         </li>
       </ul>

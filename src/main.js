@@ -8,7 +8,13 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 // require styles
 import 'swiper/dist/css/swiper.css'
 import FastClick from 'fastclick'
-
+import VueLazyload from 'vue-lazyload';
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: 'http://img0.imgtn.bdimg.com/it/u=2401895806,821799314&fm=27&gp=0.jpg',
+  loading: 'http://a.hiphotos.baidu.com/zhidao/pic/item/b90e7bec54e736d1afec42129d504fc2d5626929.jpg',
+  attempt: 1
+});
 FastClick.attach(document.body);
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.config.productionTip = false
